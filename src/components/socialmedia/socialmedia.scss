@@ -1,0 +1,92 @@
+
+@import "../../styles/globle.scss";
+
+.socialmedia{
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 40px;
+
+    &::after{
+        content: "";
+        width: 2px;
+        height: 80px;
+        background-color: $lightSlate;
+        border-radius: 99rem;
+        margin: 0 auto;
+    }
+
+    .socialmedia__links{
+
+        margin-bottom: 20px;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+        
+        &:hover{
+            transform: translate(0, -4px);
+            .socialmedia__link{
+                color: $green;
+            }
+        }
+
+        .socialmedia__link{
+
+            color: $lightSlate;
+
+        }
+
+    }
+
+}
+
+@media (max-width: $breakpoint-medium) {
+    .socialmedia{
+
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        left: 15px;
+    
+        &::after{
+            content: "";
+            width: 2px;
+            height: 80px;
+            background-color: $lightSlate;
+            border-radius: 99rem;
+            margin: 0 auto;
+        }
+    
+        .socialmedia__links{
+    
+            margin-bottom: 15px;
+            transition: all 200ms ease-in-out;
+            cursor: pointer;
+            
+            &:hover{
+                transform: translate(0, -3px);
+                .socialmedia__link{
+                    color: $green;
+                }
+            }
+    
+            .socialmedia__link{
+    
+                color: $lightSlate;
+    
+            }
+    
+        }
+    
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .socialmedia{
+
+        display: none;
+    
+    }
+}

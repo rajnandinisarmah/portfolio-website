@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+$navy: #FFD5C2;
+$lightNavy: #FFFFFF;
+$lightestNavy: #F28F3BDD;
+$slate: #C8553D;
+$lightSlate: #C8553D;
+$lightestSlate: #C8553D;
+$white: #FFFFFF;
+$green: #C8553D;
+
+
+$border-radius: 4px;
+$nav-height: 100px;
+$nav-scroll-height: 70px;
+$tab-height: 42px;
+$tab-width: 120px;
+
+$breakpoint-medium: 1024px;
+$breakpoint-small: 520px;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $navy;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $navy;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $slate;
+    border-radius: 25px;
+}

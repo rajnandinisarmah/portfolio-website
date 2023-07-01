@@ -1,0 +1,89 @@
+@import "../../styles/globle.scss";
+
+.contactMe{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 250px 20px;
+    .contactMe__subHeading{
+
+        color: $green;
+        font-size: 16px;
+
+    }
+
+    .contactMe__heading{
+
+        font-size: 42px;
+        color: $lightSlate;
+        font-family: 'lato', monospace;
+        font-weight: 900;
+        margin-top: 12px;
+
+    }
+
+    .contactMe__p{
+
+        color: $slate;
+        font-family: 'lato', monospace;
+        max-width: 600px;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+    }
+
+    .contactMe__btn{
+
+        padding: 16px 20px;
+        font-weight: 200;
+        font-size: 18px;
+        border: 1px solid $green;
+        border-radius: $border-radius;
+        color: $green;
+        transition: all 100ms ease-in-out;
+        background-color: transparent;
+        margin-top: 24px;
+        margin-bottom: 44px;
+
+        &:hover{
+            background-color: $lightNavy;
+        }
+
+    }
+
+    .contactMe__socialmedia{
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+
+        .socialmedia__links{
+
+            margin-bottom: 20px;
+            transition: all 200ms ease-in-out;
+            cursor: pointer;
+            
+            &:hover{
+                transform: translate(0, -4px);
+                .socialmedia__link{
+                    color: $green;
+                }
+            }
+    
+            .socialmedia__link{
+    
+                color: $lightSlate;
+    
+            }
+    
+        }
+
+    }
+
+}

@@ -1,0 +1,291 @@
+
+@import "../../styles/globle.scss";
+
+.about{
+
+    max-width: 1120px;
+    width: 100%;
+    padding: 150px 60px;
+    margin: 0 auto;
+
+    .about__heading{
+
+        color: $lightestSlate;
+        font-size: 30px;
+        font-family: 'lato', monospace;
+        font-weight: 900;
+        letter-spacing: 1.4;
+        margin-bottom: 2rem;
+
+        &::before{
+            content: "01.";
+            margin-right: 5px;
+            font-size: 26px;
+            font-weight: 300;
+            color: $green;
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        &::after{
+            content: "";
+            height: 9px;
+            width: 100px;
+            border-radius: 99px;
+            background-color: white;
+            margin: auto 0;
+        }
+
+    }
+
+    .about__container{
+
+        display: flex;
+        width: 100%;
+
+
+        .about__left{
+            width: 60%;
+
+            .about__leftp{
+
+                p{
+                    color: $slate;
+                    line-height: 1.5;
+                    margin-bottom: 15px;
+                    font-family: 'lato', monospace;
+                    font-size: 18px;
+                    letter-spacing: 1.3;
+
+                }
+
+            }
+
+            .about__skills{
+                display: grid;
+                grid-template-columns: repeat(2, minmax(140px, 200px));
+                gap: 5px 10px;
+                padding: 0px;
+                margin: 20px 0px 0px;
+                overflow: hidden;
+                list-style: none;
+
+                .about__skill{
+
+                    color: $slate;
+                    font-size: 14px;
+
+                    &::before{
+                        content: "▹";
+                        color: $green;
+                        margin-right: 5px;
+                    
+                    }
+                }
+
+
+                
+            }
+
+        }
+
+        .about__right{
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+
+    
+
+}
+
+@media (max-width: $breakpoint-medium) {
+    .about{
+
+        padding: 150px 60px;
+    
+        .about__heading{
+    
+            color: $lightestSlate;
+            font-size: 26px;
+            font-family: 'lato', monospace;
+            font-weight: 900;
+            letter-spacing: 1.4;
+            margin-bottom: 1.6rem;
+    
+            &::before{
+                content: "01.";
+                margin-right: 5px;
+                font-size: 23px;
+                font-weight: 300;
+                color: $green;
+                font-family: 'Source Code Pro', monospace;
+            }
+    
+            &::after{
+                content: "";
+                height: 9px;
+                width: 100px;
+                border-radius: 99px;
+                background-color: white;
+                margin: auto 0;
+            }
+    
+        }
+    
+        .about__container{
+    
+            display: flex;
+            width: 100%;
+    
+    
+            .about__left{
+                width: 100%;
+    
+                .about__leftp{
+    
+                    p{
+                        color: $slate;
+                        line-height: 1.5;
+                        margin-bottom: 12px;
+                        font-family: 'lato', monospace;
+                        font-size: 16px;
+                        letter-spacing: 1.3;
+    
+                    }
+    
+                }
+    
+                .about__skills{
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(140px, 200px));
+                    gap: 5px 10px;
+                    padding: 0px;
+                    margin: 15px 0px 0px;
+                    overflow: hidden;
+                    list-style: none;
+    
+                    .about__skill{
+    
+                        color: $slate;
+                        font-size: 14px;
+    
+                        &::before{
+                            content: "▹";
+                            color: $green;
+                            margin-right: 5px;
+                        
+                        }
+                    }
+    
+    
+                    
+                }
+    
+            }
+    
+            .about__right{
+                width: 0%;
+            }
+        }
+    
+        
+    
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .about{
+
+        padding: 150px 20px;
+    
+        .about__heading{
+    
+            color: $lightestSlate;
+            font-size: 26px;
+            font-family: 'lato', monospace;
+            font-weight: 900;
+            letter-spacing: 1.4;
+            margin-bottom: 1.6rem;
+    
+            &::before{
+                content: "01.";
+                margin-right: 5px;
+                font-size: 23px;
+                font-weight: 300;
+                color: $green;
+                font-family: 'Source Code Pro', monospace;
+            }
+    
+            &::after{
+                content: "";
+                height: 9px;
+                width: 100px;
+                border-radius: 99px;
+                background-color: white;
+                margin: auto 0;
+            }
+    
+        }
+    
+        .about__container{
+    
+            display: flex;
+            width: 100%;
+    
+    
+            .about__left{
+                width: 100%;
+    
+                .about__leftp{
+    
+                    p{
+                        color: $slate;
+                        line-height: 1.5;
+                        margin-bottom: 12px;
+                        font-family: 'lato', monospace;
+                        font-size: 16px;
+                        letter-spacing: 1.3;
+    
+                    }
+    
+                }
+    
+                .about__skills{
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(140px, 200px));
+                    gap: 5px 10px;
+                    padding: 0px;
+                    margin: 15px 0px 0px;
+                    overflow: hidden;
+                    list-style: none;
+    
+                    .about__skill{
+    
+                        color: $slate;
+                        font-size: 14px;
+    
+                        &::before{
+                            content: "▹";
+                            color: $green;
+                            margin-right: 5px;
+                        
+                        }
+                    }
+    
+    
+                    
+                }
+    
+            }
+    
+            .about__right{
+                width: 0%;
+            }
+        }
+    
+        
+    
+    }
+}

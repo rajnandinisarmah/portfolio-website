@@ -1,0 +1,547 @@
+@import "../../styles/globle.scss";
+
+.projects{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px 100px 0;
+
+    .projects__heading{
+
+        color: $lightestSlate;
+        font-size: 30px;
+        font-weight: 900;
+        letter-spacing: 1.4;
+        margin-bottom: 2rem;
+
+        &::before{
+            content: "03.";
+            margin-right: 5px;
+            font-size: 26px;
+            font-weight: 300;
+            color: $green;
+            font-family: 'Source Code Pro', monospace;
+        }
+
+        &::after{
+            content: "";
+            height: 9px;
+            width: 100px;
+            border-radius: 99px;
+            background-color: white;
+            margin: auto 10px;
+        }
+
+    }
+
+    .projects__wrapper{
+
+        .singleProject{
+
+            position: relative;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            margin-bottom: 100px;
+        
+            .singleProject__left{
+
+                div{
+                    position: absolute;
+                    width: 60%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    border-radius: 5px;
+                }
+        
+            }
+        
+            .singleProject__right{
+        
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                min-height: 300px;
+                z-index: 2;
+                width: 50%;
+        
+                .singleProject__featured{
+                    color: $green;
+                    text-align: right;
+                    font-size: 14px;
+                }
+                
+                .singleProject__heading{
+                    color: $lightestSlate;
+                    text-align: right;
+                    font-size: 24px;
+                }
+        
+                
+                .singleProject__pWrapper{
+        
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    padding: 20px 25px;
+                    background-color: $lightNavy;
+                    border-radius: 5px;
+                    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+        
+                    .singleProject__p{
+        
+                        color: $slate;
+                        font-family: 'lato', monospace;
+                        font-weight: 500;
+                        line-height: 1.4;
+                        font-size: 16px;
+                        text-align: right;
+        
+                    }
+        
+                }
+        
+                .skills__wrapper{
+        
+                    display: flex;
+        
+                    .skill{
+                        font-size: 16px;
+                        color: $slate;
+                        margin-left: 20px;
+                    }
+        
+                }
+        
+                .skills__links{
+        
+                    margin-top: 20px;
+        
+                    a{
+        
+                        color: $slate;
+                        margin-left: 20px;
+                        transition: all 200ms ease-in-out;
+                        cursor: pointer;
+                        
+                        &:hover{
+                            color: $green;
+                            
+                        }
+        
+                    }
+        
+                }
+            }
+        
+        }
+
+        .singleProject:nth-child(even){
+
+            position: relative;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-bottom: 100px;
+        
+            .singleProject__left{
+
+                div{
+                    position: absolute;
+                    width: 60%;
+                    height: 100%;
+                    right: 0 !important;
+                    left: auto;
+                    top: 0;
+                    border-radius: 5px;
+                }
+        
+            }
+        
+            .singleProject__right{
+        
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                min-height: 300px;
+                z-index: 2;
+                width: 50%;
+        
+                .singleProject__featured{
+                    color: $green;
+                    text-align: left;
+                    font-size: 14px;
+                }
+                
+                .singleProject__heading{
+                    color: $lightestSlate;
+                    text-align: left;
+                    font-size: 24px;
+        
+                }
+        
+                
+                .singleProject__pWrapper{
+        
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    padding: 20px 25px;
+                    background-color: $lightNavy;
+                    border-radius: 5px;
+                    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+        
+                    .singleProject__p{
+        
+                        text-align: left;
+        
+                    }
+        
+                }
+        
+                .skills__wrapper{
+        
+                    display: flex;
+        
+                    .skill{
+                        margin-right: 20px;
+                        margin-left: 0;
+                    }
+        
+                }
+        
+                .skills__links{
+        
+                    margin-top: 20px;
+        
+                    a{
+        
+                        margin-right: 20px;
+                        margin-left: 0;
+        
+                    }
+        
+                }
+            }
+        
+        }
+
+
+
+    }
+    
+
+}
+
+@media (max-width: $breakpoint-medium) {
+    .projects{
+
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 150px 60px 0;
+    
+        .projects__heading{
+    
+            color: $lightestSlate;
+            font-size: 30px;
+            font-weight: 900;
+            letter-spacing: 1.4;
+            margin-bottom: 2rem;
+    
+            &::before{
+                content: "03.";
+                margin-right: 5px;
+                font-size: 26px;
+                font-weight: 300;
+                color: $green;
+                font-family: 'Source Code Pro', monospace;
+            }
+    
+            &::after{
+                content: "";
+                height: 9px;
+                width: 100px;
+                border-radius: 99px;
+                background-color: white;
+                margin: auto 10px;
+            }
+    
+        }
+    
+        .projects__wrapper{
+    
+            .singleProject,
+            .singleProject:nth-child(even){
+    
+                position: relative;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                margin-bottom: 60px;
+            
+                .singleProject__left{
+            
+                    img{
+                        display: none;
+                        position: absolute;
+                        width: 60%;
+                        left: 0;
+                        top: 0;
+                        border-radius: 5px;
+                    }
+            
+                }
+            
+                .singleProject__right,
+                .singleProject__right:nth-child(even){
+            
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-end;
+                    min-height: 300px;
+                    z-index: 2;
+                    width: 100%;
+                    padding: 20px 25px;
+                    background-color: $lightNavy;
+            
+                    .singleProject__featured{
+                        color: $green;
+                        text-align: left !important;
+                        font-size: 14px;
+                        width: 100%;
+                    }
+                    
+                    .singleProject__heading{
+                        color: $lightestSlate;
+                        text-align: left !important;
+                        font-size: 24px;
+                        width: 100%;
+                    }
+            
+                    
+                    .singleProject__pWrapper{
+            
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                        background-color: transparent;
+                        border-radius: 5px;
+                        box-shadow: none;
+                        padding: 0;
+            
+                        .singleProject__p{
+            
+                            color: $slate;
+                            font-family: 'lato', monospace;
+                            font-weight: 500;
+                            line-height: 1.4;
+                            font-size: 16px;
+                            text-align: left;
+            
+                        }
+            
+                    }
+            
+                    .skills__wrapper{
+            
+                        display: flex;
+                        align-items: flex-start;
+                        width: 100%;
+            
+                        .skill{
+                            font-size: 16px;
+                            color: $slate;
+                            margin-right: 20px;
+                            margin-left: 0;
+                        }
+            
+                    }
+            
+                    .skills__links{
+            
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: flex-start;
+                        width: 100%;
+            
+                        a{
+            
+                            color: $slate;
+                            margin-right: 20px;
+                            margin-left: 0;
+                            transition: all 200ms ease-in-out;
+                            cursor: pointer;
+                            
+                            &:hover{
+                                color: $green;
+                                
+                            }
+            
+                        }
+            
+                    }
+                }
+            
+            }
+    
+        }
+    
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .projects{
+
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 150px 20px 0;
+    
+        .projects__heading{
+    
+            color: $lightestSlate;
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 1.4;
+            margin-bottom: 2rem;
+    
+            &::before{
+                content: "03.";
+                margin-right: 5px;
+                font-size: 20px;
+                font-weight: 300;
+                color: $green;
+                font-family: 'Source Code Pro', monospace;
+            }
+    
+            &::after{
+                content: "";
+                height: 9px;
+                width: 100px;
+                border-radius: 99px;
+                background-color: white;
+                margin: auto 10px;
+            }
+    
+        }
+    
+        .projects__wrapper{
+    
+            .singleProject,
+            .singleProject:nth-child(even){
+    
+                position: relative;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                margin-bottom: 40px;
+            
+                .singleProject__left{
+            
+                    img{
+                        display: none;
+                        position: absolute;
+                        width: 60%;
+                        left: 0;
+                        top: 0;
+                        border-radius: 5px;
+                    }
+            
+                }
+            
+                .singleProject__right,
+                .singleProject__right:nth-child(even){
+            
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-end;
+                    min-height: 300px;
+                    z-index: 2;
+                    width: 100%;
+                    padding: 20px 25px;
+                    background-color: $lightNavy;
+            
+                    .singleProject__featured{
+                        color: $green;
+                        text-align: left !important;
+                        font-size: 14px;
+                        width: 100%;
+                    }
+                    
+                    .singleProject__heading{
+                        color: $lightestSlate;
+                        text-align: left !important;
+                        font-size: 24px;
+                        width: 100%;
+                    }
+            
+                    
+                    .singleProject__pWrapper{
+            
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                        background-color: transparent;
+                        border-radius: 5px;
+                        box-shadow: none;
+                        padding: 0;
+            
+                        .singleProject__p{
+            
+                            color: $slate;
+                            font-family: 'lato', monospace;
+                            font-weight: 500;
+                            line-height: 1.4;
+                            font-size: 16px;
+                            text-align: left;
+            
+                        }
+            
+                    }
+            
+                    .skills__wrapper{
+            
+                        display: flex;
+                        align-items: flex-start;
+                        width: 100%;
+            
+                        .skill{
+                            font-size: 16px;
+                            color: $slate;
+                            margin-right: 20px;
+                            margin-left: 0;
+                        }
+            
+                    }
+            
+                    .skills__links{
+            
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: flex-start;
+                        width: 100%;
+            
+                        a{
+            
+                            color: $slate;
+                            margin-right: 20px;
+                            margin-left: 0;
+                            transition: all 200ms ease-in-out;
+                            cursor: pointer;
+                            
+                            &:hover{
+                                color: $green;
+                                
+                            }
+            
+                        }
+            
+                    }
+                }
+            
+            }
+    
+        }
+    
+    }
+}

@@ -1,0 +1,185 @@
+
+@import "../../styles/globle.scss";
+
+.hero{
+
+    margin: 0 100px;
+
+    .hero__container{
+        max-width: 1000px;
+        padding: 150px 0;
+        margin: 0 auto;
+        height: auto;
+
+        .hero__starter{
+            color: $green;
+            font-weight: 200;
+            font-size: 16px;
+        }
+
+        .hero__main{
+            font-size: clamp(40px, 8vw, 80px);
+            color: $lightestSlate;
+            font-family: 'lato', monospace;
+            font-weight: 800;
+            line-height: 0.9;
+            margin-top: 30px;
+        }
+
+        .hero__submain{
+            font-size: clamp(40px, 8vw, 80px);
+            color: $slate;
+            font-family: 'lato', monospace;
+            font-weight: 800;
+            line-height: 0.9;
+            margin-top: 20px;
+        }
+
+        .hero__des{
+            color: $slate;
+            font-size: 16px;
+            margin: 30px 0px;
+            max-width: 540px;
+            margin-bottom: 80px;
+            line-height: 1.5;
+        }
+
+        .hero__btn{
+            padding: 14px 18px;
+            font-weight: 200;
+            font-size: 16px;
+            border: 1px solid $green;
+            border-radius: $border-radius;
+            color: $green;
+            transition: all 100ms ease-in-out;
+            cursor: pointer;
+            &:hover{
+                background-color: $lightNavy;
+            }
+        }
+        
+    }
+    
+}
+
+@media (max-width: $breakpoint-medium) {
+    .hero{
+
+        margin: 0 60px;
+    
+        .hero__container{
+            max-width: 1000px;
+            padding: 150px 0;
+            margin: 0 auto;
+            height: auto;
+    
+            .hero__starter{
+                color: $green;
+                font-weight: 200;
+                font-size: 15px;
+            }
+    
+            .hero__main{
+                font-size: clamp(32px, 8vw, 80px);
+                color: $lightestSlate;
+                font-family: 'lato', monospace;
+                font-weight: 800;
+                line-height: 0.9;
+                margin-top: 24px;
+            }
+    
+            .hero__submain{
+                font-size: clamp(32px, 8vw, 80px);
+                color: $slate;
+                font-family: 'lato', monospace;
+                font-weight: 800;
+                line-height: 0.9;
+                margin-top: 16px;
+            }
+    
+            .hero__des{
+                color: $slate;
+                font-size: 14px;
+                margin: 30px 0px;
+                max-width: 540px;
+                margin-bottom: 80px;
+                line-height: 1.5;
+            }
+    
+            .hero__btn{
+                padding: 14px 18px;
+                font-weight: 200;
+                font-size: 16px;
+                border: 1px solid $green;
+                border-radius: $border-radius;
+                color: $green;
+                transition: all 100ms ease-in-out;
+                cursor: pointer;
+                &:hover{
+                    background-color: $lightNavy;
+                }
+            }
+            
+        }
+        
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .hero{
+
+        margin: 0 20px;
+    
+        .hero__container{
+    
+            .hero__starter{
+                color: $green;
+                font-weight: 200;
+                font-size: 15px;
+            }
+    
+            .hero__main{
+                font-size: clamp(32px, 8vw, 80px);
+                color: $lightestSlate;
+                font-family: 'lato', monospace;
+                font-weight: 800;
+                line-height: 0.9;
+                margin-top: 20px;
+            }
+    
+            .hero__submain{
+                font-size: clamp(32px, 8vw, 80px);
+                color: $slate;
+                font-family: 'lato', monospace;
+                font-weight: 800;
+                line-height: 0.9;
+                margin-top: 16px;
+            }
+    
+            .hero__des{
+                color: $slate;
+                font-size: 14px;
+                margin: 30px 0px;
+                max-width: 540px;
+                margin-bottom: 40px;
+                line-height: 1.5;
+            }
+    
+            .hero__btn{
+                padding: 12px 16px;
+                font-weight: 200;
+                font-size: 14px;
+                border: 1px solid $green;
+                border-radius: $border-radius;
+                color: $green;
+                transition: all 100ms ease-in-out;
+                cursor: pointer;
+                &:hover{
+                    background-color: $lightNavy;
+                }
+            }
+            
+        }
+        
+    }
+}

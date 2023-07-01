@@ -1,0 +1,18 @@
+@import "../../styles/globle.scss";
+
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .footer__link{
+
+        color: $slate;
+        font-size: 14px;
+        cursor: pointer;
+
+    }
+
+}

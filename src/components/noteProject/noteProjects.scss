@@ -1,0 +1,333 @@
+@import "../../styles/globle.scss";
+
+.noteProjects{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px 100px 0;
+
+    .noteProjects__heading{
+
+        color: $lightestSlate;
+        font-size: 26px;
+        font-weight: 900;
+        letter-spacing: 1.4;
+        margin-bottom: 3rem;
+        text-align: center;
+
+    }
+
+    .noteProjects__grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+
+}
+
+.singleNoteProjects{
+
+    padding: 40px 30px;
+    background-color: $lightNavy;
+    border-radius: 5px;
+    height: 100%;
+
+    .singleNoteProjects__top{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .MuiSvgIcon-root{
+            font-size: 40px;
+            color: $green;
+        }
+
+        .singleNoteProjects__links{
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: end;
+
+            .singleNoteProjects__link{
+                margin-left: 10px;
+                cursor: pointer;
+
+                .MuiSvgIcon-root{
+                    font-size: 25px;
+                    color: $lightSlate;
+                    transition: all 200ms ease-in-out;
+
+                    &:hover{
+                        color: $green;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    .singleNoteProjects__mid{
+
+        margin-bottom: 30px;
+
+        .singleNoteProjects__head{
+
+            font-size: 20px;
+            color: $lightestSlate;
+            font-family: 'lato', monospace;
+            margin-bottom: 20px;
+
+        }
+
+        .singleNoteProjects__p{
+
+            color: $lightSlate;
+            font-family: 'lato', monospace;
+            font-weight: 500;
+            letter-spacing: 1.8;
+            line-height: 1.2;
+
+        }
+    }
+
+    .singleNoteProjects__but{
+
+        .singleNoteProjects__a{
+
+            font-size: 14px;
+            margin-right: 10px;
+            color: $slate;
+
+        }
+
+    }
+
+}
+
+@media (max-width: $breakpoint-medium) {
+    .noteProjects{
+
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 150px 50px 0;
+    
+        .noteProjects__heading{
+    
+            color: $lightestSlate;
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 1.4;
+            margin-bottom: 3rem;
+            text-align: center;
+    
+        }
+    
+        .noteProjects__grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 15px;
+            grid-row-gap: 15px;
+        }
+    
+    }
+    
+    .singleNoteProjects{
+    
+        padding: 26px 18px;
+        background-color: $lightNavy;
+        border-radius: 5px;
+    
+        .singleNoteProjects__top{
+    
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+    
+            .MuiSvgIcon-root{
+                font-size: 30px;
+                color: $green;
+            }
+    
+            .singleNoteProjects__links{
+    
+                display: flex;
+                align-items: flex-end;
+                justify-content: end;
+    
+                .singleNoteProjects__link{
+                    margin-left: 8px;
+                    cursor: pointer;
+    
+                    .MuiSvgIcon-root{
+                        font-size: 20px;
+                        color: $lightSlate;
+                        transition: all 200ms ease-in-out;
+    
+                        &:hover{
+                            color: $green;
+                        }
+                    }
+    
+                }
+    
+            }
+    
+        }
+    
+        .singleNoteProjects__mid{
+    
+            margin-bottom: 20px;
+    
+            .singleNoteProjects__head{
+    
+                font-size: 18px;
+                color: $lightestSlate;
+                font-family: 'lato', monospace;
+                margin-bottom: 12px;
+    
+            }
+    
+            .singleNoteProjects__p{
+    
+                color: $lightSlate;
+                font-family: 'lato', monospace;
+                font-weight: 500;
+                letter-spacing: 1.8;
+                line-height: 1.2;
+    
+            }
+        }
+    
+        .singleNoteProjects__but{
+    
+            .singleNoteProjects__a{
+    
+                font-size: 14px;
+                margin-right: 10px;
+                color: $slate;
+    
+            }
+    
+        }
+    
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .noteProjects{
+
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 150px 20px 0;
+    
+        .noteProjects__heading{
+    
+            color: $lightestSlate;
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 1.4;
+            margin-bottom: 3rem;
+            text-align: center;
+    
+        }
+    
+        .noteProjects__grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 15px;
+            grid-row-gap: 15px;
+        }
+    
+    }
+    
+    .singleNoteProjects{
+    
+        padding: 26px 18px;
+        background-color: $lightNavy;
+        border-radius: 5px;
+    
+        .singleNoteProjects__top{
+    
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+    
+            .MuiSvgIcon-root{
+                font-size: 30px;
+                color: $green;
+            }
+    
+            .singleNoteProjects__links{
+    
+                display: flex;
+                align-items: flex-end;
+                justify-content: end;
+    
+                .singleNoteProjects__link{
+                    margin-left: 8px;
+                    cursor: pointer;
+    
+                    .MuiSvgIcon-root{
+                        font-size: 20px;
+                        color: $lightSlate;
+                        transition: all 200ms ease-in-out;
+    
+                        &:hover{
+                            color: $green;
+                        }
+                    }
+    
+                }
+    
+            }
+    
+        }
+    
+        .singleNoteProjects__mid{
+    
+            margin-bottom: 20px;
+    
+            .singleNoteProjects__head{
+    
+                font-size: 18px;
+                color: $lightestSlate;
+                font-family: 'lato', monospace;
+                margin-bottom: 12px;
+    
+            }
+    
+            .singleNoteProjects__p{
+    
+                color: $lightSlate;
+                font-family: 'lato', monospace;
+                font-weight: 500;
+                letter-spacing: 1.8;
+                line-height: 1.2;
+    
+            }
+        }
+    
+        .singleNoteProjects__but{
+    
+            .singleNoteProjects__a{
+    
+                font-size: 14px;
+                margin-right: 10px;
+                color: $slate;
+    
+            }
+    
+        }
+    
+    }
+}
